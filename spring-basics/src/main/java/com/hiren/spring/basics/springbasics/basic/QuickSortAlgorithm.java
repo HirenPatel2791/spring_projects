@@ -1,4 +1,4 @@
-package com.hiren.spring.basics.springbasics;
+package com.hiren.spring.basics.springbasics.basic;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;

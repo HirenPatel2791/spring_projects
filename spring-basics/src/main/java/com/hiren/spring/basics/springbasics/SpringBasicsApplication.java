@@ -4,6 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+import com.hiren.spring.basics.springbasics.basic.BinarySearchImpl;
+
 @SpringBootApplication
 public class SpringBasicsApplication {
 
@@ -16,10 +18,14 @@ public class SpringBasicsApplication {
 	public static void main(String[] args) {
 		//BinarySearchImpl binarySerachImpl = new BinarySearchImpl(new QuickSortAlgorithm());
 		
-		ApplicationContext applicationContext = SpringApplication.run(SpringBasicsApplication.class, args);
-		BinarySearchImpl binarySearchImpl = applicationContext.getBean(BinarySearchImpl.class);
+		ApplicationContext applicationContext = 
+				SpringApplication.run(SpringBasicsApplication.class, args);
 		
-		int result = binarySearchImpl.binarySearch(new int [] { 12, 4, 6}, 3);
+		BinarySearchImpl binarySearchImpl = 
+				applicationContext.getBean(BinarySearchImpl.class);
+		
+		int result = binarySearchImpl.binarySearch(new int [] { 12, 4, 6 }, 3);
+		
 		System.out.println(result);
 	}
 }
