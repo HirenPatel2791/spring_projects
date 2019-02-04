@@ -28,9 +28,5 @@ public class BinarySearchImpl {
 		//Return result
 		return 3;
 	}
-<<<<<<< HEAD
 	//adfadsf
-=======
-	//trying some git
->>>>>>> parent of 47c194d... Revert "asdfa"
 }
