@@ -28,5 +28,5 @@ public class BinarySearchImpl {
 		//Return result
 		return 3;
 	}
-	
+	//adfadsf
 }
